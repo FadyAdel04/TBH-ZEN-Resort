@@ -1,0 +1,290 @@
+/* start scroll to top */
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -30px;
+    background-color: #1151c0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 40;
+}
+
+.up.show {
+    right: 10px;
+}
+
+/* end scroll to top */
+/* The navigation bar */
+.navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.landing img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* start landing */
+
+.landing h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    overflow: hidden;
+    color: aliceblue;
+}
+
+.landing h3 {
+    position: absolute;
+    top: 37%;
+    left: 215px;
+    color: #fff8d3;
+}
+
+.landing span {
+    position: absolute;
+    top: 320px;
+    left: 235px;
+    font-size: 18px;
+    color: #00ffff;
+}
+
+.landing h5 {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    color: aliceblue;
+}
+
+.landing .btnf {
+    position: absolute;
+    top: 420px;
+    left: 280px;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    color: #000;
+}
+
+.landing button:hover {
+    background-color: rgb(0, 255, 255);
+}
+
+/* end landing */
+/* btn1 */
+.btn1 {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* start about us */
+
+.container .row img {
+    width: 100%;
+    height: 37rem;
+}
+
+.container .row h2 {
+    color: #3aa4a4;
+}
+
+.container .row h2,
+p {
+    margin-left: 150px;
+}
+
+/* end about us */
+.btn2 {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+/* start facilities */
+.container .row .col .card-title {
+    color: #1151c0;
+}
+
+.container .row .col .card-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* end facilities */
+
+/* start center image */
+.img-center img {
+    width: 100%;
+    height: 620px;
+}
+
+.img-center h2 {
+    position: absolute;
+    overflow: hidden;
+    color: #000;
+    top: 183rem;
+    left: 35rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.img-center span {
+    position: absolute;
+    overflow: hidden;
+    font-size: large;
+    color: #000;
+    margin-top: 12rem;
+    margin-left: 40rem;
+}
+
+/* end center image */
+
+/* start offers */
+.card-group .card-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.card-group span {
+    color: #000;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.card-group i {
+    padding: 45px;
+}
+
+.wifi p {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* end offers */
+/* start team */
+body {
+    margin-top: 20px;
+    background: #eee;
+}
+
+a {
+    color: #f96332;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 30px;
+    transition: .5s;
+    border: 0;
+    border-radius: .1875rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+}
+
+.card .body {
+    font-size: 14px;
+    color: #424242;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.profile-page .profile-header {
+    position: relative
+}
+
+.profile-page .profile-header .profile-image img {
+    border-radius: 50%;
+    width: 140px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+}
+
+.profile-page .profile-header .social-icon a {
+    margin: 0 5px
+}
+
+.profile-page .profile-sub-header {
+    min-height: 60px;
+    width: 100%
+}
+
+.profile-page .profile-sub-header ul.box-list {
+    display: inline-table;
+    table-layout: fixed;
+    width: 100%;
+    background: #eee
+}
+
+.profile-page .profile-sub-header ul.box-list li {
+    border-right: 1px solid #e0e0e0;
+    display: table-cell;
+    list-style: none
+}
+
+.profile-page .profile-sub-header ul.box-list li:last-child {
+    border-right: none
+}
+
+.profile-page .profile-sub-header ul.box-list li a {
+    display: block;
+    padding: 15px 0;
+    color: #424242
+}
+
+/* end team */
+
+/* start reservatiom */
+.reservation img {
+    position: relative;
+}
+
+.reservation h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.reservation img {
+    width: 100%;
+}
+
+.reservation .form {
+    position: relative;
+}
+
+/* end reservatiom */
+/* start gallery */
+
+
+
+/* end gallery */
