@@ -9,6 +9,11 @@
   <!-- MDB icon -->
   <link rel="icon" href="img/logo.png" type="image/x-icon" />
   <!-- MDB -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Include Bootstrap CSS (Make sure Bootstrap is loaded) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
   <!-- style.css -->
   <link rel="stylesheet" href="css/style.css">
@@ -22,7 +27,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
+<!-- Include Bootstrap JS (Important for Toggle Button) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
   <span class="up">Up</span>
   <!-- Start your project here-->
@@ -30,118 +36,105 @@
 
   <!-- end nav bar -->
   <!-- start landing -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="position:sticky;top: 0; z-index: 40;">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar" data-aos="fade-down" data-aos-duration="1500">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand logo" href="#">
+      <img src="img/logo.png" height="35" alt="Logo" loading="lazy" />
+    </a>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-2 mt-lg-0 logo" style="cursor: pointer;">
-          <img src="img/logo.png" height="35" alt="MDB Logo" loading="lazy" />
-        </a>
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link home" style="cursor: pointer;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link aboutus" style="cursor: pointer;">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link aboutus gallery" style="cursor: pointer;">Hotel Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hotelRoomType" style="cursor: pointer;">Hotle Room Types</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link facilities" style="cursor: pointer;">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link topOffer" style="cursor: pointer;">Top Offers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link Attractions" style="cursor: pointer;">Attractions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ourTeam" style="cursor: pointer;">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link Reservation" style="cursor: pointer;">Reservation</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
-    </div>
-    <!-- Right elements -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
-  <!-- Navbar -->
-  <!-- landing page -->
-  <div class="landing">
-    <img src="img/3.jpg">
-  </div>
-  <!-- end landing -->
-  <!-- btn -->
-  <h3 class="btn1">About Us</h3>
-
-  <!-- start about us -->
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 img-center">
-        <img src="img/2.jpg" style="border-radius: 15px;">
-      </div>
-      <div class="col-lg-5 mb-4 text-md-start">
-        <h2>ZEN Resort Sahl Hasheesh</h2>
-        <p>TBH is a hospitality entity that owns both resorts &
-          restaurant based in Hurghada, Egypt
-          We mainly present the idea of Boutique Hotels in
-          Hurghada where we merge quality with service
-        </p>
-        <h2>Company Purpose</h2>
-        <p>
-          our unique combination allows us to establish a well manged facilities for our customers that combine the
-          luxury of chain hotels with thee comfort & leisure of Boutique Hotels while maintaining a quality standard
-          that is unique
-        </p>
-        <h2>Company Vision</h2>
-        <p>TBH all over Egypt with
-          unhindererd quality
-          Our ambition is to create customer
-          loyalty based on guests who are
-          satisfied with our services, expand
-          TBH hotels, resorts & restaurants
-          all over Egypt with the same
-          consistent quality standards
-        </p>
-        <h2>Comoany Mission</h2>
-        <p>Innovating & creating quality
-          standards for customers
-          We create a memorable customer
-          experience throughout the quality of
-          our products and services.
-        </p>
-      </div>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link home" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link aboutus" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gallery" href="#">Hotel Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link hotelRoomType" href="#">Hotel Room Types</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link facilities" href="#">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link topOffer" href="#">Top Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link attractions" href="#">Attractions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ourTeam" href="#">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link reservation" href="#">Reservation</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <br>
-  <br>
-  <!-- end about us -->
+</nav>
+
+<!-- Landing Page -->
+<div class="landing">
+  <div class="overlay">
+    <h1>Welcome to Our Hotel</h1>
+    <h2>TBH Company Group - Zen Resort, Sahl Hasheesh</h2>
+    <p>Feel like at home</p>
+  </div>
+  <img src="img/3(2).jpg" alt="Zen Resort, Sahl Hasheesh">
+</div>
+  <!-- About Us Button -->
+<h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">About Us</h3>
+
+<!-- Start About Us Section -->
+<br>
+<div class="container about-section">
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-lg-7 img-center" data-aos="fade-right" data-aos-duration="1500">
+      <img src="img/2.jpg" alt="Zen Resort" class="about-img">
+    </div>
+
+    <!-- Text Section -->
+    <div class="col-lg-5 about-text" data-aos="fade-left" data-aos-duration="1500">
+      <h2>ZEN Resort Sahl Hasheesh</h2>
+      <p>TBH is a hospitality entity that owns both resorts & restaurants based in Hurghada, Egypt.  
+        We mainly present the idea of Boutique Hotels in Hurghada, merging quality with service.
+      </p>
+      <h2>Company Vision</h2>
+      <p>
+        Our ambition is to create customer loyalty based on guests who are satisfied with our services.  
+        We aim to expand TBH hotels, resorts & restaurants all over Egypt with the same consistent quality standards.
+      </p>
+
+      <h2>Company Mission</h2>
+      <p>
+        We innovate and create quality standards for our customers, ensuring a memorable experience  
+        through the quality of our products and services.
+      </p>
+    </div>
+  </div>
+</div>
+<br><br>
+<!-- End About Us Section -->
+
   <!-- start gallery -->
-  <h3 class="btn2">Hotel Gallery</h3>
+  <h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Hotel Gallery</h3>
   <br>
   <br>
-  <div class="container">
+  <div class="container" data-aos="zoom-in" data-aos-duration="1500">
     <!-- Carousel wrapper -->
     <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
       <!-- Indicators -->
@@ -189,216 +182,231 @@
     <!-- Carousel wrapper -->
   </div>
   <br>
-  <a href="gallery.html">
-    <button style="display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    color: #fff;
-    background-color:#1151c0 ;
-    border-radius: 5px;">See More..</button>
+  <a href="gallery.html" class="btn1">
+    see more
   </a>
   <br>
   <!-- end gallery -->
   <br>
   <br>
   <h3 class="btn2">Hotel Room Types</h3>
-  <br>
-  <br>
-  <!-- start hotel's master room -->
+<br><br>
+
+<!-- Start Hotel Room Types -->
+<div class="container">
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/5.jpg" class="card-img-top" alt="Hollywood Sign on The Hill" />
+    
+    <!-- Jounior Suite -->
+    <div class="col" data-aos="fade-left" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/5.jpg" class="card-img-top" alt="Jounior Suite Room">
         <div class="card-body">
           <h5 class="card-title">Jounior Suite</h5>
           <p class="card-text">
-            Bed Room & Living Room <span style="color: #1151c0;">Sea View</span>
+            <i class="fas fa-bed"></i> Bed Room & Living Room  
+            <span class="room-feature"><i class="fas fa-water"></i> Sea View</span>
           </p>
+          <div class="room-footer">
+            <span class="room-price">$199 / Night</span>
+            <a href="booking.html" class="book-now-btn">Book Now</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/10.jpg" class="card-img-top" alt="Palm Springs Road" />
+
+    <!-- DeLuxe Twin Bed -->
+    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/10.jpg" class="card-img-top" alt="DeLuxe Twin Bed Room">
         <div class="card-body">
           <h5 class="card-title">DeLuxe</h5>
-          <p class="card-text">Twin Bed <span style="color: #1151c0;">Sea View</span></p>
+          <p class="card-text">
+            <i class="fas fa-bed"></i> Twin Bed  
+            <span class="room-feature"><i class="fas fa-water"></i> Sea View</span>
+          </p>
+          <div class="room-footer">
+            <span class="room-price">$179 / Night</span>
+            <a href="booking.html" class="book-now-btn">Book Now</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="img/11.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" />
+
+    <!-- DeLuxe King Bed -->
+    <div class="col" data-aos="fade-right" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/11.jpg" class="card-img-top" alt="DeLuxe King Bed Room">
         <div class="card-body">
           <h5 class="card-title">DeLuxe</h5>
-          <p class="card-text">King Bed <span style="color: #1151c0;">Sea View</span></p>
+          <p class="card-text">
+            <i class="fas fa-bed"></i> King Bed  
+            <span class="room-feature"><i class="fas fa-water"></i> Sea View</span>
+          </p>
+          <div class="room-footer">
+            <span class="room-price">$209 / Night</span>
+            <a href="booking.html" class="book-now-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br><br>
+<!-- End Hotel Room Types -->
+
+<h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Facilities</h3>
+<br>
+<br>
+<!-- start facilities -->
+<div class="container">
+  <div class="row">
+    <div class="col" data-aos="fade-right" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Aura Restaurant</div>
+        <div class="card-body">
+          <i class="fa-solid fa-utensils fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Ala Cart Menues</p>
+          <p class="card-text">International Cusine</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Free Wifi</div>
+        <div class="card-body">
+          <i class="fa-solid fa-wifi fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">WiFi is available in the rooms and Outdoor</p>
+          <p class="card-text">Free of Charge</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-left" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Outdoor Swimming Pool</div>
+        <div class="card-body">
+          <i class="fa-solid fa-person-swimming fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">All ages welcome</p>
+          <p class="card-text">Sun Beds and Umbrellas are available</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
         </div>
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <!-- end hotel's master room -->
-  <h3 class="btn1">Facilities</h3>
-  <br>
-  <br>
-  <!-- start facilities -->
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Aura Restaurant</div>
-          <div class="card-body">
-            <i class="fa-solid fa-utensils fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Ala Cart Menues</p>
-            <p class="card-text">Internatoinal Cusine</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Free Wifi</div>
-          <div class="card-body">
-            <i class="fa-solid fa-wifi fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">WiFi is available in the rooms and Outdoor</p>
-            <p class="card-text">Free of Charge</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Out Door Swimmong Pool</div>
-          <div class="card-body">
-            <i class="fa-solid fa-person-swimming fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">All ages welcome</p>
-            <p class="card-text">Sun Beds and Umberllas are Aviable</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
-          </div>
+
+  <div class="row">
+    <div class="col" data-aos="fade-right" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Fitness Center</div>
+        <div class="card-body">
+          <i class="fa-solid fa-dumbbell fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Available free of charge</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
         </div>
       </div>
     </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Fitness Center</div>
-          <div class="card-body">
-            <i class="fa-solid fa-dumbbell fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Available free of Charge</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <br>
-            <br>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Bar</div>
-          <div class="card-body">
-            <i class="fa-solid fa-martini-glass fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Available Pool Bar & Beach Bar & Coffee Shop</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
-            <br>
-            <br>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Private Beach Area & Beachfront</div>
-          <div class="card-body">
-            <i class="fa-solid fa-umbrella-beach fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">All ages welcome</p>
-            <p class="card-text">Sun Beds and Umberllas are Aviable</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-          </div>
+    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Bar</div>
+        <div class="card-body">
+          <i class="fa-solid fa-martini-glass fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Available Pool Bar, Beach Bar & Coffee Shop</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
         </div>
       </div>
     </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">AirPort Shuttle</div>
-          <div class="card-body">
-            <i class="fa-solid fa-van-shuttle fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Free shuttle Bus from the Hotel to the Beach</p>
-            <p class="card-text">from 9AM : sunset</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Breakfast</div>
-          <div class="card-body">
-            <i class="fa-solid fa-mug-hot fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Choose from Alacart Menues</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <br>
-            <br>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center">
-          <div class="card-header">Non Smoking-Room</div>
-          <div class="card-body">
-            <i class="fa-solid fa-ban-smoking fa-2xl"></i>
-            <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
-            <p class="card-text">Available Upon Request</p>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <i class="fa-solid fa-star" style="color:  #c21212;"></i>
-            <br>
-            <br>
-          </div>
+    <div class="col" data-aos="fade-left" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Private Beach Area</div>
+        <div class="card-body">
+          <i class="fa-solid fa-umbrella-beach fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">All ages welcome</p>
+          <p class="card-text">Sun Beds and Umbrellas are available</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
         </div>
       </div>
     </div>
   </div>
-  <!-- end facilities -->
+
+  <div class="row">
+    <div class="col" data-aos="fade-right" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Airport Shuttle</div>
+        <div class="card-body">
+          <i class="fa-solid fa-van-shuttle fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Free shuttle bus from the hotel to the beach</p>
+          <p class="card-text">From 9AM to sunset</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #c21212;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Breakfast</div>
+        <div class="card-body">
+          <i class="fa-solid fa-mug-hot fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Choose from Alacart Menus</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col" data-aos="fade-left" data-aos-duration="1500">
+      <div class="card text-center">
+        <div class="card-header">Non Smoking Room</div>
+        <div class="card-body">
+          <i class="fa-solid fa-ban-smoking fa-3x"></i>
+          <h5 class="card-title" style="padding-top: 10px;">Special title treatment</h5>
+          <p class="card-text">Available upon request</p>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+          <i class="fa-solid fa-star" style="color: #c21212;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end facilities -->
+
   <br>
   <br>
 
@@ -409,429 +417,427 @@
   <!-- end center images -->
   <br>
   <br>
-  <h3 class="btn2">Top Offers</h3>
+  <h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Top Offers</h3>
   <br>
   <br>
-  <!-- start top offers -->
-  <div class="wifi">
-    <p><i class='bx bxs-notification' style='color:#ff0000'></i>All Rooms Has Free Wifi</p>
-  </div>
-  <div class="card-group">
-    <div class="card p-2">
-      <img src="img/14.jpg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title" style="color: #1151c0;">Jounior Suite</h5>
-        <class="card-text">This spacious suite includes 1 living room, 1 separate bedroom and 1 bathroom with a shower
-          and free toiletries. The air-conditioned suite offers a flat-screen TV with cable channels, a minibar, a
-          seating area, a wardrobe as well as sea views. The unit has 2 beds.
-          <br>
-          <hr>
-          <i class='bx bxs-bed bx-md' style='color:#1151c0'><span>1</span></i>
-          <i class='bx bx-hotel bx-md' style="color: #c21212;"><span>1</span></i>
-          <i class='bx bxs-user bx-md'><span>3</span></i>
-          <hr>
-          <button style="background-color: #1151c0; color: #fff; display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: auto;
-          border-radius: 5px;">Book Now</button>
-      </div>
-    </div>
-    <div class="card p-2">
-      <img src="img/10.jpg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title" style="color: #1151c0;">Deluxe Double Room with Sea View</h5>
-        <class="card-text">The spacious double room offers air conditioning, a minibar, a balcony with sea views as well
-          as a private bathroom featuring a shower. The unit offers 2 beds.
-          <br>
-          <br>
-          <br>
-          <hr>
-          <i class='bx bxs-hotel bx-md' style="color: #1151c0;"><span>2</span></i>
-          <i class='bx bxs-user bx-md'><span>2</span></i>
-          <i class='bx bxs-drink bx-md'></i>
-          <hr>
-          <button style="background-color: #1151c0; color: #fff; display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: auto;
-          border-radius: 5px;">Book Now</button>
-      </div>
-    </div>
-    <div class="card p-2">
-      <img src="img/5(2).jpg" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title" style="color: #1151c0;">Economy Double Room</h5>
-        <class="card-text">The spacious double room provides air conditioning, a minibar, a balcony with mountain views
-          as well as a private bathroom featuring a shower. The unit offers 1 bed.
-          <br>
-          <br>
-          <br>
-          <hr>
-          <i class='bx bxs-bed bx-md' style='color:#1151c0'><span>1</span></i>
-          <i class='bx bxs-user bx-md'><span>2</span></i>
-          <i class='bx bxs-drink bx-md'></i>
-          <hr>
-          <button style="background-color: #1151c0; color: #fff; display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: auto;
-          border-radius: 5px;">Book Now</button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <!-- end top offers -->
-  <h3 class="btn2">Attractions</h3>
-  <br>
-  <br>
-  <!-- start attraction -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4"><img src="img/15.jpg" style="border-radius: 15px; width:100%; height: 400px;"></div>
-      <div style="margin-top: 60px;" class="col-lg-8 text-md-start">
-        <h2 style="color: #ff0000;">TBH Company</h2>
-        <h2>ZEN Resort Sahl Hasheesh</h2>
-        <p>ZEN Resort is our newest addition to the Group. ZEN
-          is located in the heart of AZZURRA Sahl Hasheesh,
-          where we created a luxurious getaway for our
-          customers to indulge in comfort and the luxury of
-          Sahl Hasheesh breathtaking ambience</p>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <!-- end attraction -->
-  <!-- start meet the team -->
-  <h3 class="btn2">Board Team</h3>
-  <br>
-  <br>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <div class="container profile-page">
-    <div class="row">
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width: 150px;height: 150px;"
-                    src="img/mr ali.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>Mr</strong>. Ali El Far
-                </h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">TBH Chairman & CEO
-                  </h6>
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">Graduated from Glion Institute of Higher Education of
-                  Hospitality in Switzerland as he came back with new
-                  innovative management ideas in the industry, as he
-                  introduced the idea of Boutique Hotels in Hurghada
-                  while combining both luxury, quality & comfort.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width: 150px;height: 150px;"
-                    src="img/mr hossam.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>MR</strong>. Hossam El Ammrousy</h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">TBH Hotels & Resorts</h6>
-                  General Manager
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">With more than 30 years of experience Mr. Hossam is
-                  managing our TBH Hotels and Resorts Group, as he has
-                  both local & international experiences combined with
-                  our vision & mission he is the perfect fit for our
-                  structure and organization goals.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width: 150px;height: 150px;"
-                    src="img/mr adel.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>Mr</strong>. Adel Megahed
-                </h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">ZEN Resort</h6> "General Manager"
+<!-- Start Hotel Room Types -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">with more than 25 years of experience in the
-                  hospitality industry, Mr. Adel was the right fit for our
-                  ZEN Resort Sahl Hasheesh, he implements structure for
-                  both our customers experience & employees. with his
-                  managerial skills and experience we ensure and
-                  maintain a high quality for our guests in TBH Hotels &
-                  Resorts</p>
-              </div>
-            </div>
+    <!-- Junior Suite -->
+    <div class="col" data-aos="fade-left" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/14.jpg" class="card-img-top" alt="Junior Suite Room">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #1151c0;">Junior Suite</h5>
+          <p class="card-text">
+            <i class="fas fa-bed"></i> Bed Room & Living Room  
+            <span class="room-feature"><i class="fas fa-water"></i> Sea View</span>
+          </p>
+          <div class="room-footer">
+            <span class="room-price">$199 / Night</span>
+            <a href="booking.html" class="book-now-btn" style="background-color: #1151c0; color: #fff; border-radius: 5px; text-align: center; display: block; padding: 10px 20px; text-decoration: none;">Book Now</a>
           </div>
         </div>
       </div>
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width:150px;height: 150px;"
-                    src="img/mr mukhtar.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>MR</strong>. Mukhtar Mohamed</h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">TBH -- Our Team</h6> Human Resources
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">
-                  with a 30 years of experience Mr. Mukhtar
-                  is managing our employees affairs by
-                  creating a sustainable environment for
-                  them to work & creates a healthy working
-                  experience
-                </p>
-              </div>
+    </div>
+
+    <!-- Deluxe Double Room with Sea View -->
+    <div class="col" data-aos="fade-up" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/10.jpg" class="card-img-top" alt="Deluxe Double Room with Sea View">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #1151c0;">Deluxe Double Room with Sea View</h5>
+          <p class="card-text">
+            <i class="fas fa-bed"></i> Double Bed  
+            <span class="room-feature"><i class="fas fa-water"></i> Sea View</span>
+          </p>
+          <div class="room-footer">
+            <span class="room-price">$179 / Night</span>
+            <a href="booking.html" class="book-now-btn" style="background-color: #1151c0; color: #fff; border-radius: 5px; text-align: center; display: block; padding: 10px 20px; text-decoration: none;">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Economy Double Room -->
+    <div class="col" data-aos="fade-right" data-aos-duration="1500">
+      <div class="card h-100 room-card">
+        <img src="img/5(2).jpg" class="card-img-top" alt="Economy Double Room">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #1151c0;">Economy Double Room</h5>
+          <p class="card-text">
+            <i class="fas fa-bed"></i> Double Bed  
+            <span class="room-feature"><i class="fas fa-water"></i> Mountain View</span>
+          </p>
+          <div class="room-footer">
+            <span class="room-price">$159 / Night</span>
+            <a href="booking.html" class="book-now-btn" style="background-color: #1151c0; color: #fff; border-radius: 5px; text-align: center; display: block; padding: 10px 20px; text-decoration: none;">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Hotel Room Types -->
+<h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Attractions</h3>
+<br>
+<br>
+
+<!-- Start Attraction -->
+<div class="container">
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="1500">
+      <div class="attraction-image" style="overflow: hidden; border-radius: 15px;">
+        <img src="img/15.jpg" class="img-fluid" style="transition: transform 0.3s ease-in-out; width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+    <!-- Text Section -->
+    <div class="col-lg-6 text-md-start" data-aos="fade-up-left" data-aos-duration="1500">
+      <h2 class="attraction-title" style="color: #3aa4a4; font-size: 2.5rem; font-weight: bold;">TBH Company</h2>
+      <h3 class="attraction-subtitle" style="font-size: 2rem; margin-top: 10px;">ZEN Resort Sahl Hasheesh</h3>
+      <p class="attraction-description" style="font-size: 1.1rem; line-height: 1.6; margin-top: 20px;">
+        ZEN Resort is our newest addition to the Group. Located in the heart of AZZURRA Sahl Hasheesh, we’ve created a luxurious getaway for our customers to indulge in comfort and experience the breathtaking ambiance of Sahl Hasheesh.
+      </p>
+      <button class="btn btn-primary" style="background-color: #3aa4a4; color: #fff; border-radius: 5px; margin-top: 20px; padding: 10px 20px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+        Learn More
+      </button>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<!-- End Attraction -->
+
+<!-- Add some hover effect for the image -->
+<style>
+  .attraction-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+</style>  <!-- start meet the team -->
+  <h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Board Team</h3>
+<br><br>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container profile-page">
+  <div class="row">
+    <div class="col-xl-6 col-lg-12 col-md-12"  data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/mr ali.png"> </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>Mr</strong>. Ali El Far</h4>
+              <span class="job_post"><h6 class="position">TBH Chairman & CEO</h6></span>
+              <hr>
+              <p class="description">Graduated from Glion Institute of Higher Education of Hospitality in Switzerland as he came back with new innovative management ideas in the industry, as he introduced the idea of Boutique Hotels in Hurghada while combining both luxury, quality & comfort.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width: 150px;height: 150px;"
-                    src="img/mr mohamed ali.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>Mr</strong>. Mohamed Ali
-                </h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">TBH -- Our Team</h6> TBH Financial Controller
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">with more than 15 years of experience Mr.
-                  Mohamed manages our financial affairs and
-                  status by planning and implementing strategies
-                  to maintain highest standards of financial
-                  administration & control</p>
-              </div>
+    <div class="col-xl-6 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/mr hossam.png"> </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-7 col-md-12">
-        <div class="card profile-header" style="height: 390px;">
-          <div class="body">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <div class="profile-image float-md-right"> <img style="width: 150px;height: 150px;"
-                    src="img/me dina.png"> </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <h4 class="m-t-0 m-b-0"><strong>Ms</strong>. Dina Shalash</h4>
-                <span class="job_post">
-                  <h6 style="color: #ff0000;">TBH -- Our Team</h6> Marketing & Social Media Manager
-                </span>
-                <hr>
-                <p style="text-align: center;
-                display: flex;
-                justify-content: center;
-                margin: auto;">with more than 10 years of experience in
-                  marketing and social media management,
-                  Ms. Shalash is handling our brand name &
-                  identity by creating & implementing
-                  strategies to allow us to expand both
-                  online and offline Marketing in addition to
-                  creating a communication with our
-                  customers</p>
-              </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>MR</strong>. Hossam El Ammrousy</h4>
+              <span class="job_post"><h6 class="position">TBH Hotels & Resorts General Manager</h6></span>
+              <hr>
+              <p class="description">With more than 30 years of experience, Mr. Hossam is managing our TBH Hotels and Resorts Group, as he has both local & international experiences combined with our vision & mission he is the perfect fit for our structure and organization goals.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- end meet the team -->
+  <div class="row">
+    <div class="col-xl-6 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/mr adel.png"> </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>Mr</strong>. Adel Megahed</h4>
+              <span class="job_post"><h6 class="position">ZEN Resort General Manager</h6></span>
+              <hr>
+              <p class="description">With more than 25 years of experience in the hospitality industry, Mr. Adel was the right fit for our ZEN Resort Sahl Hasheesh. He implements structure for both our customers' experience & employees. With his managerial skills and experience, we ensure and maintain high quality for our guests in TBH Hotels & Resorts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/mr mukhtar.png"> </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>MR</strong>. Mukhtar Mohamed</h4>
+              <span class="job_post"><h6 class="position">TBH Human Resources</h6></span>
+              <hr>
+              <p class="description">With 30 years of experience, Mr. Mukhtar is managing our employee affairs by creating a sustainable environment for them to work & creating a healthy working experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/mr mohamed ali.png"> </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>Mr</strong>. Mohamed Ali</h4>
+              <span class="job_post"><h6 class="position">TBH Financial Controller</h6></span>
+              <hr>
+              <p class="description">With more than 15 years of experience, Mr. Mohamed manages our financial affairs and status by planning and implementing strategies to maintain the highest standards of financial administration & control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-12 col-md-12" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="card profile-header">
+        <div class="body">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="profile-image"> <img class="profile-img" src="img/me dina.png"> </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-12">
+              <h4><strong>Ms</strong>. Dina Shalash</h4>
+              <span class="job_post"><h6 class="position">TBH Marketing & Social Media Manager</h6></span>
+              <hr>
+              <p class="description">With more than 10 years of experience in marketing and social media management, Ms. Shalash is handling our brand name & identity by creating & implementing strategies to allow us to expand both online and offline Marketing in addition to creating communication with our customers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- start reservation -->
   <br>
-  <h3 class="btn2">Reservation</h3>
-  <br>
-  <br>
-  <div class="container" style="display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;">
-    <div class="reservation">
-      <img src="img/4.jpg" style="height: 500px;" width="650px">
-      <br>
-      <br>
-      <div class="form">
-        <h2 style="color: #1151c0;">Make Your Reservation</h2>
-        <br>
-        <br>
+  <h3 class="btn1" data-aos="zoom-in" data-aos-duration="1500">Reservation</h3>
+<br><br>
+<div class="container reservation-container">
+  <div class="reservation">
+    
+    <!-- Image Section -->
+    <div class="image-container" data-aos="fade-right" data-aos-duration="1500">
+      <img src="img/4.jpg" alt="Reservation Image">
+    </div>
+    
+    <!-- Form Section -->
+    <div class="form-container" data-aos="fade-left" data-aos-duration="1500">
+      <br><br>
+      
+      <form method="post">
         <div class="row">
           <div class="col">
-            <form method="post">
-              <div class="form-group"> <!-- Date input -->
-                <label class="control-label" for="date">CHECH IN</label>
-                <br>
-                <input type="date" style="width: 390px; height: 35px;">
-              </div>
+            <label for="check-in">CHECK IN</label>
+            <input type="date" id="check-in">
           </div>
           <div class="col">
-            <form method="post">
-              <div class="form-group"> <!-- Date input -->
-                <label class="control-label" for="date">CHECH OUT</label>
-                <br>
-                <input type="date" style="width: 390px; height: 35px;">
-              </div>
+            <label for="check-out">CHECK OUT</label>
+            <input type="date" id="check-out">
           </div>
         </div>
+        
         <br>
         <div class="row">
           <div class="col">
-            <small style="color: gray;">ADULTS</small>
-            <select class="form-select" aria-label="1">
+            <small>ADULTS</small>
+            <select class="form-select">
               <option selected>1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
-              <option value="2">more</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="more">more</option>
             </select>
           </div>
           <div class="col">
-            <small style="color: gray;">CHILDREN</small>
-            <select class="form-select" aria-label="Default select example">
+            <small>CHILDREN</small>
+            <select class="form-select">
               <option selected>0</option>
               <option value="1">1</option>
               <option value="2">2</option>
-              <option value="2">more</option>
+              <option value="more">more</option>
             </select>
           </div>
           <div class="col">
-            <small style="color: gray;">ROOMS</small>
-            <select class="form-select" aria-label="Default select example">
+            <small>ROOMS</small>
+            <select class="form-select">
               <option selected>1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
-              <option value="2">more</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="more">more</option>
             </select>
           </div>
         </div>
+        
         <br>
         <div class="row">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Enter Your Email</label>
+            <input type="email" class="form-control" placeholder="name@example.com">
+            <label>Enter Your Email</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Enter Your Phone Number">
-            <label for="floatingPassword">Enter Your Phone Number</label>
+            <input type="text" class="form-control" placeholder="Enter Your Phone Number">
+            <label>Enter Your Phone Number</label>
           </div>
         </div>
+        
         <br>
         <div class="row">
-          <button style="color: #fff;
-            background-color: #1151c0;
-            height: 35px;
-            border-radius: 5px;">Book Now</button>
+          <button class="book-btn">Book Now</button>
         </div>
-        <a
-          href="https://www.booking.com/hotel/eg/zen-sahl-hasheesh.en-gb.html?no_rooms=1&sr_order=popularity&srepoch=1686308214&hapos=1&activeTab=main&sid=d70023877f9566d52cfdb5cfbb67d608&ucfs=1&dest_id=9184408&room1=A%2CA&dest_type=hotel&label=gen173nr-1FCAEoggI46AdIM1gEaEOIAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AuWKjKQGwAIB0gIkMTNjMWUyNTItZTc0YS00YjAxLWE0OGEtNGM3NmMxYjI5MGVk2AIG4AIB&dist=0&req_children=0&srpvid=b2754cfaf5cc01ab&aid=304142&req_adults=2&sb_price_type=total&group_children=0&type=total&hpos=1&group_adults=2">
-          <img style="width: 200px; height: 150px; display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: auto;" src="img/booking.png">
-        </a>
-      </div>
+        
+        <br>
+        <div class="booking-logo">
+          <a href="https://www.booking.com/hotel/eg/zen-sahl-hasheesh.en-gb.html">
+            <img src="img/booking.png" alt="Booking">
+          </a>
+        </div>
+      </form>
     </div>
   </div>
-  </div>
-  <br>
-  <br>
-  <!-- end reservation -->
-  <!-- footer -->
-  <footer style="background-color: #c6ecf0;">
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;"><img style="width: 150px;height: 150px;"
-              src="img/logo.png"></h5>
-          <p>
-            TBH is a hospitality entity that owns both resorts &
-            restaurant based in Hurghada, Egypt
-            We mainly present the idea of Boutique Hotels in
-            Hurghada where we merge quality with service
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-3" style="letter-spacing: 2px; color: #1151c0; ">links</h5>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-1">
-              <a href="https://www.booking.com/hotel/eg/zen-sahl-hasheesh.en-gb.html?no_rooms=1&sr_order=popularity&srepoch=1686308214&hapos=1&activeTab=main&sid=d70023877f9566d52cfdb5cfbb67d608&ucfs=1&dest_id=9184408&room1=A%2CA&dest_type=hotel&label=gen173nr-1FCAEoggI46AdIM1gEaEOIAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4AuWKjKQGwAIB0gIkMTNjMWUyNTItZTc0YS00YjAxLWE0OGEtNGM3NmMxYjI5MGVk2AIG4AIB&dist=0&req_children=0&srpvid=b2754cfaf5cc01ab&aid=304142&req_adults=2&sb_price_type=total&group_children=0&type=total&hpos=1&group_adults=2"
-                style="color: #4f4f4f;">Booking</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5 class="mb-1" style="letter-spacing: 2px; color: #1151c0; text-align: center;">opening hours</h5>
-          <table class="table" style="color: #4f4f4f; border-color: #666;">
-            <tbody>
-              <tr>
-                <td style="text-align: center;">24/7</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .reservation-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reservation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .form-container {
+    flex: 1;
+    width: 100%;
+  }
+
+  .form-container h2 {
+    color: #1151c0;
+  }
+
+  .form-container input, 
+  .form-container select {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+  }
+
+  .book-btn {
+    color: #fff;
+    background-color: #1151c0;
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .booking-logo {
+    text-align: center;
+  }
+
+  .booking-logo img {
+    height: 150px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .reservation {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-height: 400px;
+    }
+
+    .form-container {
+      width: 100%;
+    }
+
+    .form-container input, 
+    .form-container select {
+      width: 100%;
+    }
+  }
+</style>
+
+
+  <!-- Footer -->
+<footer style="background-color: #c6ecf0; padding: 40px 0;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Logo & Description -->
+      <div class="col-lg-6 col-md-12 mb-4 text-center text-md-start">
+        <img src="img/logo.png" style="height: 120px; margin-bottom: 15px;">
+        <p style="color: #4f4f4f; max-width: 500px; margin: auto;">
+          TBH is a hospitality entity that owns both resorts & restaurants based in Hurghada, Egypt.
+          We mainly present the idea of Boutique Hotels in Hurghada where we merge quality with service.
+        </p>
       </div>
+      
+      <!-- Links Section -->
+      <div class="col-lg-3 col-md-6 mb-4 text-center">
+        <h5 style="letter-spacing: 2px; color: #1151c0;">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.booking.com/hotel/eg/zen-sahl-hasheesh.en-gb.html" style="color: #4f4f4f; text-decoration: none;">Booking</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Opening Hours -->
+      <div class="col-lg-3 col-md-6 mb-4 text-center">
+        <h5 style="letter-spacing: 2px; color: #1151c0;">Opening Hours</h5>
+        <p style="color: #4f4f4f; font-weight: bold;">24/7</p>
+      </div>
+
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      Created By:
-      <a class="text-dark" href="#">FadyAdel</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- end footer -->
+  </div>
+
+  <!-- Bottom Copyright Section -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Created By:
+    <a class="text-dark" href="#">Fady Adel</a>
+  </div>
+</footer>
+<!-- End Footer -->
+
   <!-- End your project here-->
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
@@ -857,6 +863,10 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/gallery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
