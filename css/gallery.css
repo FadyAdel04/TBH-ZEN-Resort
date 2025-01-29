@@ -5,6 +5,80 @@ body {
     font-size: 16px;
 }
 
+/* Navbar Base Styles */
+.custom-navbar {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Navbar Brand Logo */
+  .navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  /* Hover Animation */
+  .navbar-nav .nav-link:hover {
+    color: #00ffff; /* Gold color */
+    transform: translateY(-2px);
+  }
+  
+  /* Underline Effect on Hover */
+  .navbar-nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #00ffff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Mobile Navbar */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-link {
+      display: block;
+      padding: 10px;
+    }
+  
+    .navbar-toggler {
+      border: none;
+      outline: none;
+      color: white;
+    }
+  
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+
 #demo {
     height: 100%;
     position: relative;
@@ -67,3 +141,4 @@ img.zoom {
     margin: auto;
     padding-bottom: 30px;
 }
+
